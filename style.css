@@ -172,11 +172,11 @@ h2{
 .sec-resumo{
   background-color: var(--cor-de-destaque);
   padding-top: 56px;
-  
+  height: 100vh;
 }
 
 #resumo{
-  height: 100vh;
+  height: 100%;
   background-color: var(--cor-de-destaque);
   display: flex;
   flex-direction: column;
