@@ -172,6 +172,7 @@ h2{
 .sec-resumo{
   background-color: var(--cor-de-destaque);
   padding-top: 56px;
+  
 }
 
 #resumo{
@@ -183,7 +184,7 @@ h2{
 
 #resumo .resumo-primeiro-container{
   height: fit-content;
-  padding: 30px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 #resumo .resumo-primeiro-container h2{
@@ -220,11 +221,12 @@ h2{
   width: 200px;
 }
 
+
 #resumo .resumo-segundo-container{
   height: fit-content;
   background-color: var(--cor-intermediaria);
   text-align: left;
-  padding: 60px 20px;
+  padding: 40px 20px;
   font-size: 1.5rem;
 }
 
