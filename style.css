@@ -167,11 +167,12 @@ h2{
   }
 }
 
-/* tela inicial */
+/* sessão resumo */
 
 .sec-resumo{
   background-color: var(--cor-de-destaque);
   padding-top: 56px;
+  height: 100vh;
 }
 
 #resumo{
@@ -234,6 +235,7 @@ h2{
 .sec-sobre{
   background-color: var(--cor-clara);
   padding-top: 56px;
+  height: 100vh;
 }
 
 #sobre {
