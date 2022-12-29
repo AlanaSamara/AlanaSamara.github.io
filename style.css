@@ -113,7 +113,6 @@ header > ul{
 
 #inicio{
   position: relative;
-  width: 100%;
   height: 100vh;
   background: var(--cor-de-destaque) url("./img/fundo-pagina-inicial.jpg") center center/cover no-repeat fixed;
 }
@@ -166,26 +165,17 @@ header > ul{
 
 /* sessão resumo */
 
-
-#resumo{
-  height: 100vh;
-  position: relative;
+.sec-resumo{
+  background-color: var(--cor-de-destaque);
+  margin-top: 56px;
 }
 
-.content-resumo{
-  width: 100%;
+#resumo{
   background-color: var(--cor-de-destaque);
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-top: 66px;
-  
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-
-  transform: translate(-0%, -0%);
-
+  margin-top: 20px;
 }
 
 .resumo-titulo h1{
@@ -238,10 +228,12 @@ h2{
 
 /* campo sobre */
 
+.sec-sobre{
+  padding: 56px 0px;
+  background-color: var(--cor-clara);
+}
 
 #sobre {
-  height: 100vh;
-  padding: 56px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,7 +242,6 @@ h2{
   row-gap: 20px;
   background-color: var(--cor-clara);
 }
-
 
 #sobre img{
   width: 150px;
@@ -278,8 +269,6 @@ h2{
 .sec-qualificacoes{
   background-color: var(--cor-intermediaria);
   padding-top: 56px;
-  height: 100vh;
-  margin: 0, auto;
 }
 
 .qualificacoes{

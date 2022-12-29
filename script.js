@@ -41,7 +41,7 @@ function scrollToIdOnClick(event2){
 
   nav.classList.toggle('active'); // Fechar o menu após um item ser clicado
 
-  const to = getScrollTopByHref(event2.target) ; 
+  const to = getScrollTopByHref(event2.target) - 56; 
   // 56 = a ditancia que a barra de menu terá do inicio da section
 
   scrollToPosition(to);
@@ -107,7 +107,7 @@ const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll(){
-  const windowTop = window.pageYOffset + 550; /*((window.innerHeight * 3) / 4); */
+  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4); 
   target.forEach(function(element){
     if( (windowTop) > element.offsetTop){
       element.classList.add(animationClass);
