@@ -273,6 +273,7 @@ header > ul{
 #sobre a{
   font-size: 1.2rem;
   text-decoration: none;
+  margin-top: 20px;
   padding: 20px 40px;
   background-color: black;
   color: white;
@@ -493,6 +494,7 @@ header > ul{
 
 .container-skills{
   width: 90%;
+  height: 100%;
   position: relative;
   padding: 15px;
 }
@@ -511,8 +513,7 @@ header > ul{
 
 .skills-gallery{
   overflow: auto;
-  max-height: 425px;
-
+  max-height: 520px;
   scrollbar-width: 5px; 
   scrollbar-color: var(--cor-de-destaque) #c4c7bd;
 }
