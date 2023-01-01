@@ -195,8 +195,8 @@ controlsProjetos.forEach(controlProjetos => {
       currentProjeto = maxProjetos  - 1;
     }
 
-    if (currentProjeto == 2 ){
-      document.querySelector('.escrever').innerHTML = 'Trabalho'
+    if (currentProjeto == 3 ){
+      document.querySelector('.escrever').innerHTML = 'Pessoal'
 
       document.querySelector('.preencher2').style.background = '#091133';
 
@@ -204,8 +204,8 @@ controlsProjetos.forEach(controlProjetos => {
 
       document.querySelector('.preencher3').style.background = 'transparent';
 
-    }else if(currentProjeto == 3 ){
-      document.querySelector('.escrever').innerHTML = 'Pessoal'
+    }else if(currentProjeto == 4 ){
+      document.querySelector('.escrever').innerHTML = 'Trabalho'
 
       document.querySelector('.preencher2').style.background = 'transparent';
 

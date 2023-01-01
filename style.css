@@ -303,7 +303,7 @@ header > ul{
 
 .container-cards{
   position: relative;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   max-width: 640px;
   margin: 0 auto;
   display: flex;
@@ -315,7 +315,7 @@ header > ul{
 
 .cards-wrapper{
   overflow-x: auto;
-  padding-bottom: 20px;      
+  padding-bottom: 40px;      
   scrollbar-color: var(--cor-de-destaque) #c4c7bd;
 }
 
@@ -351,7 +351,7 @@ header > ul{
 
 .item{
   width: 100%;
-  height: 350px;
+  height: 420px;
   padding: 20px;
   flex-shrink: 0;
   display: flex;
@@ -370,6 +370,23 @@ header > ul{
   padding-bottom: 15px;
 }
 
+.item > a{
+  background-color: transparent;
+  padding: 18px 32px;
+  margin-top: 20px;
+  border: 2px solid var(--cor-de-destaque);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  color: var(--cor-de-destaque);
+  text-decoration: none;
+}
+
+.item > a > img{
+  width: 1.7rem;
+}
+
 .item-content{
   display: flex;
   flex-direction: row;
@@ -382,19 +399,29 @@ header > ul{
   align-items: center;
 }
 
-.item-content-image > img{
-  width: 50px;
-  height: 50px;
+.item-content-image > div{
   background-color: var(--cor-de-destaque);
-  border-radius: 50%;
+  height: min-content;
   padding: 10px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
 }
+
+
+.item-content-image > div > img{
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 5px;
+}
+
 
 .item-content-image > span{
   width: 1px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.253);
-  border: 1px solid rgba(0, 0, 0, 0.253);
+  background-color: gray;
+  border: 1px solid gray;
 }
 
 .item-content-text{
@@ -414,6 +441,11 @@ header > ul{
   height: 1px;
   background-color: var(--cor-de-destaque);
   border: 2px solid var(--cor-de-destaque);
+}
+
+.item-content-text > p > a{
+  color: #525252;
+  text-decoration: none;
 }
 
 /* campo minhas habilidades */
@@ -500,7 +532,7 @@ header > ul{
 }
 
 .skill{
-  margin: 0px 10px;
+  margin: 0px 15px;
   padding: 40px 0px;
   display: flex;
   flex-direction: row;
@@ -524,8 +556,8 @@ header > ul{
 }
 
 .skill-content-image > img{
-  height: 50px;
-  width: 50px;
+  height: 2.7rem;
+  width: 2.7rem;
   border-radius: 5px;
 }
 
@@ -598,7 +630,8 @@ header > ul{
 .linha{
   width: 50px;
   height: 1px;
-  border: 1px solid #091133;
+  background-color: var(--cor-de-destaque);
+  border: 1px solid var(--cor-de-destaque);
 }
 
 .circle > div{
@@ -681,6 +714,27 @@ header > ul{
   margin-bottom: 60px;
 }
 
+.projeto > a > img{
+  width: 250px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.185);
+  margin-bottom: 60px;
+}
+
+.projeto > span{
+  width: 250px;
+  height: 150px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.185);
+  margin-bottom: 60px;
+}
+
+.projeto > span > img{
+  width: 100px;
+}
+
 .projeto > h3{
   padding-bottom: 20px;
   font-weight: normal;
@@ -702,6 +756,10 @@ header > ul{
   row-gap: 20px;
 }
 
+.but-unico{
+  padding-top: 40px;
+}
+
 .projeto > div > a{
   text-decoration: none;
   padding: 18px 32px;
@@ -717,6 +775,7 @@ header > ul{
 .projeto > div > a > img{
   width: 30px;
 }
+
 .primeiro-but{
   background-color: var(--cor-de-destaque);
   color: white;
@@ -844,6 +903,16 @@ form > button{
   font-size: 1rem;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.404);
   cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+form > button > img{
+  width: 1.2rem;
 }
 
 .contato-mail-phone{
@@ -872,59 +941,31 @@ form > button{
   margin-bottom: 10px;
 }
 
-/* Configurando a página de agradecimento pelo preenchimento do forms */
-
-.bg-obrigado{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--cor-de-destaque);
-}
-
-.bg-obrigado > h1{
-  padding: 0px 50px;
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.bg-obrigado > p{
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 50px;
-}
-
-.bg-obrigado > a{
-  background-color: var(--cor-intermediaria);
-  padding: 18px 32px;
-  border-radius: 15px;
-  text-decoration: none;
-  color: var(--cor-de-destaque);
-  font-size: 1rem;
-}
-
 /* footer */
 
 footer{
-  height: 70px;
+  height: 130px;
   background-color: var(--cor-de-destaque);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-around;
+  padding: 10px 20px;
   column-gap: 60px;
 }
 
-footer > p{
+.foo-text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.foo-text > p{
   color: white;
   font-size: .9rem;
 }
 
-footer > p > a{
+.foo-text > p > a{
   color: #727270;
   text-decoration: none;
 }
@@ -933,11 +974,51 @@ footer > p > a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 17px;
 }
 
-.foo-redes > img{
-  width: 20px;
+.foo-redes > a > img{
+  width: 22px;
+}
+
+/* Configurando a página de agradecimento pelo preenchimento do forms */
+
+.bg-obrigado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--cor-de-destaque) 75%, white 75%);
+}
+
+.bg-obrigado > img{
+  width: 7rem;
+  padding-bottom: 40px;
+}
+
+.bg-obrigado > h1{
+  padding: 0px 50px;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bg-obrigado > p{
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 30px;
+}
+
+.bg-obrigado > a{
+  background-color: #979797;
+  padding: 18px 32px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--cor-de-destaque);
+  font-size: 1rem;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.301);
 }
 
 
