@@ -167,3 +167,76 @@ controls.forEach(control => {
   })
 });
 
+// blabla
+
+const controlsProjetos = document.querySelectorAll('.control-projetos');
+
+let currentProjeto = 0;
+
+const projetos = document.querySelectorAll('.projeto');
+
+const maxProjetos = projetos.length;
+
+controlsProjetos.forEach(controlProjetos => {
+  controlProjetos.addEventListener('click', () => {
+    const isLeft = controlProjetos.classList.contains("but-left");
+
+    if (isLeft){
+      currentProjeto -= 1;
+    }else{
+      currentProjeto += 1;
+    }
+
+    if (currentProjeto >= maxProjetos){
+      currentProjeto = 0;
+    }
+
+    if (currentProjeto < 0 ){
+      currentProjeto = maxProjetos  - 1;
+    }
+
+    if (currentProjeto == 2 ){
+      document.querySelector('.escrever').innerHTML = 'Trabalho'
+
+      document.querySelector('.preencher2').style.background = '#091133';
+
+      document.querySelector('.preencher1').style.background = 'transparent';
+
+      document.querySelector('.preencher3').style.background = 'transparent';
+
+    }else if(currentProjeto == 3 ){
+      document.querySelector('.escrever').innerHTML = 'Pessoal'
+
+      document.querySelector('.preencher2').style.background = 'transparent';
+
+      document.querySelector('.preencher1').style.background = 'transparent';
+
+      document.querySelector('.preencher3').style.background = '#091133';
+
+
+    }else{
+      document.querySelector('.escrever').innerHTML = 'Estudos'
+
+      document.querySelector('.preencher2').style.background = 'transparent';
+
+      document.querySelector('.preencher1').style.background = '#091133';
+
+      document.querySelector('.preencher3').style.background = 'transparent';    
+    }
+
+    console.log(currentProjeto)
+
+    projetos.forEach(projeto => projeto.classList.remove('current-projeto'));
+
+    projetos[currentProjeto].scrollIntoView({
+      inline: "center",
+      behavior: "smooth",
+      block: "nearest"
+    });
+
+    projetos[currentProjeto].classList.add('current-projeto')
+  })
+});
+
+
+

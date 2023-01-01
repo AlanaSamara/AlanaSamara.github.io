@@ -20,13 +20,33 @@ body{
   font-family: var(--fonte-padrao);
   width: 100%;
   background-color: var(--cor-de-destaque);
+  scrollbar-width: 7px; 
+  scrollbar-color: var(--cor-de-destaque) #c4c7bd;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #81837e ;
+}
+
+
+h2{
+  font-size: 1.9rem;
+  font-weight: 400;
 }
 
 
 /* menu/cabeçalho */
 
 header{
-  width: 150px;
+  width: 170px;
   position: fixed;
   background-color: #091133e8;
   overflow: hidden;
@@ -219,13 +239,6 @@ header > ul{
   color: black;
 }
 
-/* configuração do titulo (h2) das sessões */
-
-h2{
-  font-size: 1.9rem;
-  font-weight: 400;
-}
-
 /* campo sobre */
 
 .sec-sobre{
@@ -409,7 +422,7 @@ h2{
 }
 
 .habilidades{
-  height: 550px;
+  height: 640px;
   background-color: var(--cor-de-destaque);
   position: relative;
   
@@ -418,7 +431,7 @@ h2{
 .content-habilidades{
   background-color: var(--cor-clara);
   width: 80%;
-  height: 550px;
+  height: 640px;
   padding: 80px 0px;
   box-sizing: content-box;
   position: absolute;
@@ -541,14 +554,390 @@ h2{
 /* campo meus projetos */
 
 .sec-projetos{
-  height: 500px;
   background-color: var(--cor-intermediaria);
   padding: 80px 0px;
 }
 
 .projetos > h2{
   text-align: center;
+  padding-bottom: 40px;
 }
+
+.group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.escrever{
+  font-size: 1.5rem;
+}
+
+.circle-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px  40px 20px 40px;
+  border-bottom: 1px solid black;
+}
+
+.circle{
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--cor-de-destaque);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linha{
+  width: 50px;
+  height: 1px;
+  border: 1px solid #091133;
+}
+
+.circle > div{
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.preencher1{
+  background-color: #091133;
+}
+
+
+.container-projetos{
+  position: relative;
+  padding: 20px 80px;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.projetos-wrapper{
+  overflow-x: hidden;
+}
+
+.projetos-gallery{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.but-left, .but-right{
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.but-left{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+
+  transform: translate(0, -50%);
+  margin-left: 30px;
+}
+
+.but-right{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+
+  transform: translate( 0, -50%);
+  margin-right: 30px;
+}
+
+.but-left > img, .but-right > img{
+  width: 20px;
+}
+
+.projeto{
+  width: 100%;
+  height: 620px;
+  padding: 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(180deg, transparent 15%, white 15%);
+  font-weight: normal;
+}
+
+.projeto > img{
+  width: 250px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.185);
+  margin-bottom: 60px;
+}
+
+.projeto > h3{
+  padding-bottom: 20px;
+  font-weight: normal;
+}
+
+.projeto > p{
+  padding-bottom: 40px;
+}
+
+.projeto > p > a{
+  color: #525252;
+  text-decoration: none;
+}
+
+.projeto > div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.projeto > div > a{
+  text-decoration: none;
+  padding: 18px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.projeto > div > a > img{
+  width: 30px;
+}
+.primeiro-but{
+  background-color: var(--cor-de-destaque);
+  color: white;
+}
+
+.segundo-but{
+  background-color: rgb(216, 216, 216);
+  color: var(--cor-de-destaque);
+}
+
+/* campo de contato */
+
+.sec-contato{
+  background-color: var(--cor-clara);
+  padding: 80px 0px;
+}
+
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato > h2{
+  padding-bottom: 10px;
+}
+
+.contato > p{
+  width: 300px;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #727270;
+}
+
+.mapa{
+  width: 80%;
+  margin-top: 20px;
+}
+
+.icon-mapa{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-mapa > img{
+  width: 20px;
+}
+
+iframe{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+} 
+
+.form-contato{
+  width: 80%;
+}
+
+.form-contato > p{
+  padding: 40px 0px 30px 0px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+
+form > label{
+  display: none;
+}
+
+form > input{
+  width: 100%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+
+  transition: all .3s ease-in-out;
+}
+
+form > input:focus{
+  border-bottom-color: var(--cor-de-destaque);
+}
+
+form > input:focus::placeholder{
+  padding: 0px 0px 10px 5px;
+}
+
+form > textarea{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  margin-bottom: 20px;
+
+  transition: all .3s ease-in-out;
+}
+
+form > textarea::placeholder{
+  font-family: var(--fonte-padrao);
+} 
+
+form > textarea:focus{
+  border-bottom-color: var(--cor-de-destaque);
+}
+
+form > textarea:focus::placeholder{
+  padding: 0px 0px 10px 5px;
+}
+
+form > button{
+  width: 100%;
+  padding: 18px 32px;
+  background-color: var(--cor-de-destaque);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.404);
+  cursor: pointer;
+}
+
+.contato-mail-phone{
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.contato-icone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.contato-icone > a{
+  color: #727270;
+}
+
+.contato-icone > img{
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* Configurando a página de agradecimento pelo preenchimento do forms */
+
+.bg-obrigado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--cor-de-destaque);
+}
+
+.bg-obrigado > h1{
+  padding: 0px 50px;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.bg-obrigado > p{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.bg-obrigado > a{
+  background-color: var(--cor-intermediaria);
+  padding: 18px 32px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--cor-de-destaque);
+  font-size: 1rem;
+}
+
+/* footer */
+
+footer{
+  height: 70px;
+  background-color: var(--cor-de-destaque);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  column-gap: 60px;
+}
+
+footer > p{
+  color: white;
+  font-size: .9rem;
+}
+
+footer > p > a{
+  color: #727270;
+  text-decoration: none;
+}
+
+.foo-redes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.foo-redes > img{
+  width: 20px;
+}
+
 
 /*Animações de surgimento com o Scroll*/
 
