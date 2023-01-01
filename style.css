@@ -63,6 +63,7 @@ header > ul{
 
 #btn-mobile{    /* Estilização do botão Hamburguer */
   display: flex;
+  width: 100%;
   padding: .5rem 1rem;
   font-size: 1rem;
   border: none;
@@ -123,7 +124,7 @@ header > ul{
   border-bottom: 2px solid rgba(255, 255, 255, 0.185);
 }
 
-#menu a{
+#menu > li > a{
   text-decoration: none;
   color: white;
 }
@@ -218,6 +219,7 @@ header > ul{
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+  height: fit-content;
 }
 
 .link-svg > a > img{
@@ -612,7 +614,7 @@ header > ul{
 
 .container-projetos{
   position: relative;
-  padding: 20px 80px;
+  padding: 10px 90px;
   max-width: 640px;
   margin: 0 auto;
   display: flex;
@@ -662,8 +664,8 @@ header > ul{
 
 .projeto{
   width: 100%;
-  height: 620px;
-  padding: 20px;
+  height: 500px;
+  box-sizing: content-box;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -674,18 +676,18 @@ header > ul{
 }
 
 .projeto > img{
-  width: 250px;
+  width: 200px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.185);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .projeto > h3{
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-weight: normal;
 }
 
 .projeto > p{
-  padding-bottom: 40px;
+  padding: 0px 20px 30px 20px;
 }
 
 .projeto > p > a{
@@ -695,6 +697,7 @@ header > ul{
 
 .projeto > div{
   width: 100%;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -702,7 +705,7 @@ header > ul{
 
 .projeto > div > a{
   text-decoration: none;
-  padding: 18px 32px;
+  padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
