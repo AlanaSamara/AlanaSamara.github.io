@@ -18,7 +18,6 @@
 
 body{
   font-family: var(--fonte-padrao);
-  width: 100%;
   background-color: var(--cor-de-destaque);
   scrollbar-width: 7px; 
   scrollbar-color: var(--cor-de-destaque) #c4c7bd;
@@ -113,7 +112,6 @@ header > ul{
 
 #nav.active #menu{
   height: 520px;
-  /* height: calc(60vh - 20px); */
 }
 
 #menu li{
@@ -126,6 +124,8 @@ header > ul{
 #menu > li > a{
   text-decoration: none;
   color: white;
+
+  transition: all .3s ease-in-out;
 }
 
 
@@ -190,7 +190,7 @@ header > ul{
   margin-top: 72px;
 }
 
-#resumo{
+.resumo{
   background-color: var(--cor-de-destaque);
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ header > ul{
   font-size: 3.7rem;
   font-weight: normal;
   text-align: left;
-  margin: 0px 20px;
+  margin: 0px 40px;
 }
 
 .social{
@@ -211,22 +211,39 @@ header > ul{
   flex-direction: row;
   justify-content: space-between;
   column-gap: 125px;
-  margin: 0px 20px;
+  margin: 0px 40px;
 }
 
-.link-svg{
+.resumo-titulo-query{
+  display: none;
+}
+
+.texto-inicial-query{
+  display: none;
+}
+
+.icons-resumo-query{
+  display: none; 
+}
+
+.icons-resumo{
   display: flex;
   flex-direction: row;
   column-gap: 20px;
   height: fit-content;
 }
 
-.link-svg > a > img{
+.avatar-query{
+  display: none;
+}
+
+.icons-resumo > a > img{
   width: 25px;
 }
 
-.social > img{
+.avatar{
   width: 200px;
+  margin-right: 0px 40px;
 }
 
 .texto-inicial{
@@ -247,7 +264,7 @@ header > ul{
   background-color: var(--cor-clara);
 }
 
-#sobre {
+.sobre {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,19 +275,23 @@ header > ul{
   background-color: var(--cor-clara);
 }
 
-#sobre img{
+.foto-query{
+  display: none;
+}
+
+.foto{
   width: 150px;
   border-radius: 50%;
   padding: 5px;
   background-color: var(--cor-de-destaque);
 }
 
-#sobre p{
+.sobre p{
   font-size: 1.5rem;
   margin: 0px 20px;
 }
 
-#sobre a{
+.sobre a{
   font-size: 1.2rem;
   text-decoration: none;
   margin-top: 20px;
@@ -285,13 +306,14 @@ header > ul{
 .sec-qualificacoes{
   background-color: var(--cor-intermediaria);
   padding: 72px 0px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .qualificacoes{
   background-color: var(--cor-intermediaria);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 20px;
 }
 
@@ -306,8 +328,7 @@ header > ul{
 .container-cards{
   position: relative;
   padding: 40px 20px 20px 20px;
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: 480px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -353,7 +374,7 @@ header > ul{
 
 .item{
   width: 100%;
-  height: 420px;
+  height: 455px;
   padding: 20px;
   flex-shrink: 0;
   display: flex;
@@ -383,6 +404,8 @@ header > ul{
   column-gap: 10px;
   color: var(--cor-de-destaque);
   text-decoration: none;
+
+  transition: all .3s ease-in-out;
 }
 
 .item > a > img{
@@ -461,7 +484,6 @@ header > ul{
   height: 640px;
   background-color: var(--cor-de-destaque);
   position: relative;
-  
 }
 
 .content-habilidades{
@@ -498,6 +520,10 @@ header > ul{
   height: 100%;
   position: relative;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .limite-top{
@@ -646,7 +672,6 @@ header > ul{
   background-color: #091133;
 }
 
-
 .container-projetos{
   position: relative;
   padding: 20px 80px;
@@ -793,9 +818,13 @@ header > ul{
 .sec-contato{
   background-color: var(--cor-clara);
   padding: 72px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contato{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -911,6 +940,8 @@ form > button{
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+
+  transition: all .3s ease-in-out;
 }
 
 form > button > img{
@@ -986,44 +1017,60 @@ footer{
 /* Configurando a página de agradecimento pelo preenchimento do forms */
 
 .bg-obrigado{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(180deg, var(--cor-de-destaque) 75%, white 75%);
+  height: 100vh;
+  background: var(--cor-de-destaque) url("./img/fundo-pagina-inicial.jpg") center center/cover no-repeat fixed;
 }
 
-.bg-obrigado > img{
+.bg-obrigado > div{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color:#091133be;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bg-obrigado > div > img{
   width: 7rem;
   padding-bottom: 40px;
 }
 
-.bg-obrigado > h1{
+.bg-obrigado > div > h1{
   padding: 0px 50px;
   font-size: 2.5rem;
-  color: white;
+  color: gold;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.bg-obrigado > p{
+.bg-obrigado > div > p{
   font-size: 1.5rem;
-  color: gold;
+  color: white;
   margin-bottom: 30px;
 }
 
-.bg-obrigado > a{
-  background-color: #979797;
+.bg-obrigado > div > a{
+  background-color: white;
   padding: 18px 32px;
   border-radius: 15px;
   text-decoration: none;
   color: var(--cor-de-destaque);
   font-size: 1rem;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.301);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
 }
 
-
+.bg-obrigado > div > a > img{
+  width: 20px;
+}
 /*Animações de surgimento com o Scroll*/
 
 [data-anime]{

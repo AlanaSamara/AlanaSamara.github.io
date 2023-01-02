@@ -1,0 +1,810 @@
+@charset "UTF-8";
+
+:root{
+  --cor-de-destaque: #091133;
+  --cor-intermediaria: #E5E8DB;
+  --cor-clara: #FFFFFF;
+
+  --fonte-padrao: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)  { /* Tabllet*/
+
+  body{
+    background-color: var(--cor-intermediaria);
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  header{
+    width: 250px;
+    margin-left: 40px;
+  }
+
+  #menu > li > a:hover{
+    color: gray;
+    padding-left: 10px;
+  }
+
+  .sec-resumo{
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--cor-intermediaria);
+
+    position: relative;
+  }
+
+  .resumo {
+    background-color: var(--cor-intermediaria);
+    padding: 0px;
+  }
+
+  .social{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 60px;
+  }
+
+  .icons-resumo{
+    display: none; 
+  }
+  
+  .icons-resumo-query{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    height: fit-content;
+  }
+
+  .icons-resumo-query > a > img{
+    width: 20px;
+  }
+
+  .texto-inicial{
+    display: none;
+  }
+
+  .resumo-titulo{
+    display: none;
+  }
+
+  .avatar{
+    display: none;
+  }
+
+  .resumo-titulo-query{
+    display: block;
+  }
+
+  .resumo-titulo-query > h1{
+    font-weight: normal;
+    color: black;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 40px 0px 25px 0px;
+  }
+
+  .texto-inicial-query{
+    display: block;
+    padding: 0px;
+  }
+
+  .texto-inicial-query > p{
+    text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  }
+
+  .avatar-query{
+    width: 210px;
+    height: 422px;
+    margin-right: 60px;
+    display: block;
+    background-color: var(--cor-de-destaque);
+
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 0);
+  }
+
+  .avatar-query > div{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .avatar-query > div > img{
+    width: 100%;
+  }
+
+  /* campo sobre */
+
+  .sec-sobre{
+    height: 550px;
+  }
+
+  #sobre{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    padding: 0px 60px;
+  }
+
+  .foto-query{
+    display: block;
+    width: 30%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--cor-de-destaque);
+  }
+
+  .foto{
+    display: none;
+  }
+
+  .sobre{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sobre > p{
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+
+  .sobre > a{
+    margin-top: 10px;
+    padding: 18px 32px;
+  }
+
+  /* campo minhas qualificações */
+
+  .container-cards{
+    padding: 0px;
+    column-gap: 60px;
+    max-width: 740px;
+    margin: 0px 60px;
+  }
+
+  .cards-wrapper{
+    padding-bottom: 20px;      
+  }
+
+  .arrow-left > img, .arrow-right > img{
+    width: 30px;
+  }
+
+  .item > p{
+    padding-bottom: 20px;
+  }
+
+  .item > a:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+  }
+
+
+  /* campo minhas habilidades */
+
+  .sec-habilidades{
+    padding: 100px 0px;
+    background-color: var(--cor-intermediaria);
+  }
+
+  .content-habilidades{
+  padding: 80px 0px;
+  }
+
+  .container-skills{
+    height: 100%;
+  }
+
+  .skills-gallery{
+    max-width: 500px;
+  }
+
+  .limite-top{
+    width: calc( 100% - 90px);
+  
+  }
+
+  .limite-bottom{
+    width: calc( 100% - 90px);
+  }
+
+  /* campo meus projetos */
+
+  .container-projetos{
+    padding: 20px 130px;
+  }
+
+  .projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projeto{
+    height: 550px;
+  }
+
+  .projeto > p{
+    padding-bottom: 20px;
+  }
+
+  .but-left > img, .but-right > img{
+    width: 30px;
+  }
+
+  .projeto > a > img{
+    margin-bottom: 30px;
+  }
+
+  /* campo de contato */
+
+  .contato{
+    width: 700px;
+  }
+
+  form > button:hover{
+    background-color: #091133e8;
+    backdrop-filter: blur(2px);
+  }
+
+  /* pagina de agradecimento */
+
+  .bg-obrigado > a{
+    width: 180px;
+    height: 70px;
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* Laptop */
+  
+  body{
+    background-color: var(--cor-intermediaria);
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  header{
+    width: 250px;
+    margin-left: 40px;
+  }
+
+  #menu > li > a:hover{
+    color: gray;
+    padding-left: 10px;
+  }
+
+  .sec-resumo{
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--cor-intermediaria);
+
+    position: relative;
+  }
+
+  .resumo {
+    background-color: var(--cor-intermediaria);
+    padding: 0px;
+  }
+
+  .social{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 60px;
+  }
+
+  .icons-resumo{
+    display: none; 
+  }
+  
+  .icons-resumo-query{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    height: fit-content;
+  }
+
+  .icons-resumo-query > a > img{
+    width: 20px;
+  }
+
+  .texto-inicial{
+    display: none;
+  }
+
+  .resumo-titulo{
+    display: none;
+  }
+
+  .avatar{
+    display: none;
+  }
+
+  .resumo-titulo-query{
+    display: block;
+  }
+
+  .resumo-titulo-query > h1{
+    font-weight: normal;
+    color: black;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 40px 0px 25px 0px;
+  }
+
+  .texto-inicial-query{
+    display: block;
+    padding: 0px;
+  }
+
+  .texto-inicial-query > p{
+    text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  }
+
+  .avatar-query{
+    width: 210px;
+    height: 422px;
+    margin-right: 60px;
+    display: block;
+    background-color: var(--cor-de-destaque);
+
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 0);
+  }
+
+  .avatar-query > div{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .avatar-query > div > img{
+    width: 100%;
+  }
+
+  /* campo sobre */
+
+  .sec-sobre{
+    height: 550px;
+  }
+
+  #sobre{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    padding: 0px 60px;
+  }
+
+  .foto-query{
+    display: block;
+    width: 30%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--cor-de-destaque);
+  }
+
+  .foto{
+    display: none;
+  }
+
+  .sobre{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sobre > p{
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+
+  .sobre > a{
+    margin-top: 10px;
+    padding: 18px 32px;
+  }
+
+  /* campo minhas qualificações */
+
+  .container-cards{
+    padding: 0px;
+    column-gap: 60px;
+    max-width: 740px;
+    margin: 0px 60px;
+  }
+
+  .cards-wrapper{
+    padding-bottom: 20px;      
+  }
+
+  .arrow-left > img, .arrow-right > img{
+    width: 30px;
+  }
+
+  .item > p{
+    padding-bottom: 20px;
+  }
+
+  .item > a:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+  }
+
+
+  /* campo minhas habilidades */
+
+  .sec-habilidades{
+    padding: 100px 0px;
+    background-color: var(--cor-intermediaria);
+  }
+
+  .content-habilidades{
+  padding: 80px 0px;
+  }
+
+  .container-skills{
+    height: 100%;
+  }
+
+  .skills-gallery{
+    max-width: 500px;
+  }
+
+  .limite-top{
+    width: calc( 100% - 90px);
+  
+  }
+
+  .limite-bottom{
+    width: calc( 100% - 90px);
+  }
+
+  /* campo meus projetos */
+
+  .container-projetos{
+    padding: 20px 130px;
+  }
+
+  .projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projeto{
+    height: 550px;
+  }
+
+  .projeto > p{
+    padding-bottom: 20px;
+  }
+
+  .but-left > img, .but-right > img{
+    width: 30px;
+  }
+
+  .projeto > a > img{
+    margin-bottom: 30px;
+  }
+
+  /* campo de contato */
+
+  .contato{
+    width: 700px;
+  }
+
+  form > button:hover{
+    background-color: #091133e8;
+    backdrop-filter: blur(2px);
+  }
+
+  .contato-mail-phone{
+    width: 100%;
+  }
+
+  /* pagina de agradecimento */
+
+  .bg-obrigado > a{
+    width: 180px;
+    height: 70px;
+    font-size: 1.4rem;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1200px){ /* High-res laptop or desktop */
+  
+  body{
+    background-color: var(--cor-intermediaria);
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  header{
+    width: 250px;
+    margin-left: 40px;
+  }
+
+  #menu > li > a:hover{
+    color: gray;
+    padding-left: 10px;
+  }
+
+  .sec-resumo{
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--cor-intermediaria);
+
+    position: relative;
+  }
+
+  .resumo {
+    background-color: var(--cor-intermediaria);
+    padding: 0px;
+  }
+
+  .social{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 90px;
+  }
+
+  .icons-resumo{
+    display: none; 
+  }
+  
+  .icons-resumo-query{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    height: fit-content;
+  }
+
+  .icons-resumo-query > a > img{
+    width: 20px;
+  }
+
+  .texto-inicial{
+    display: none;
+  }
+
+  .resumo-titulo{
+    display: none;
+  }
+
+  .avatar{
+    display: none;
+  }
+
+  .resumo-titulo-query{
+    display: block;
+  }
+
+  .resumo-titulo-query > h1{
+    font-weight: normal;
+    color: black;
+  font-size: 3rem;
+  text-align: left;
+  margin: 40px 0px 25px 0px;
+  }
+
+  .texto-inicial-query{
+    display: block;
+    padding: 0px;
+  }
+
+  .texto-inicial-query > p{
+    text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  }
+
+  .avatar-query{
+    width: 250px;
+    height: 522px;
+    margin-right: 90px;
+    display: block;
+    background-color: var(--cor-de-destaque);
+
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 0);
+  }
+
+  .avatar-query > div{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .avatar-query > div > img{
+    width: 100%;
+  }
+
+  /* campo sobre */
+
+  .sec-sobre{
+    display: flex;
+    align-items: center;
+  }
+
+  #sobre{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 40px;
+    padding: 0px 60px;
+  }
+
+  .foto-query{
+    display: block;
+    width: 23%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--cor-de-destaque);
+  }
+
+  .foto{
+    display: none;
+  }
+
+  .sobre{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sobre > p{
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+
+  .sobre > a{
+    margin-top: 10px;
+    padding: 18px 32px;
+  }
+
+  /* campo minhas qualificações */
+
+  .container-cards{
+    padding: 0px;
+    column-gap: 60px;
+    max-width: 740px;
+    margin: 0px 60px;
+  }
+
+  .cards-wrapper{
+    padding-bottom: 20px;      
+  }
+
+  .arrow-left > img, .arrow-right > img{
+    width: 30px;
+  }
+
+  .item > p{
+    padding-bottom: 20px;
+  }
+
+  .item > a:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+  }
+
+
+  /* campo minhas habilidades */
+
+  .sec-habilidades{
+    padding: 100px 0px;
+    background-color: var(--cor-intermediaria);
+  }
+
+  .content-habilidades{
+  padding: 80px 0px;
+  }
+
+  .container-skills{
+    height: 100%;
+  }
+
+  .skills-gallery{
+    max-width: 600px;
+  }
+
+  .limite-top{
+    width: calc( 100% - 90px);
+  
+  }
+
+  .limite-bottom{
+    width: calc( 100% - 90px);
+  }
+
+  /* campo meus projetos */
+
+  .container-projetos{
+    padding: 20px 130px;
+  }
+
+  .projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projeto{
+    height: 550px;
+  }
+
+  .projeto > p{
+    padding-bottom: 20px;
+  }
+
+  .but-left > img, .but-right > img{
+    width: 30px;
+  }
+
+  .projeto > a > img{
+    margin-bottom: 30px;
+  }
+
+  /* campo de contato */
+
+  .contato{
+    width: 750px;
+  }
+
+  form > button:hover{
+    background-color: #091133e8;
+    backdrop-filter: blur(2px);
+  }
+
+  /* pagina de agradecimento */
+
+  .bg-obrigado > a{
+    width: 180px;
+    height: 70px;
+    font-size: 1.4rem;
+  }
+  
+
+}

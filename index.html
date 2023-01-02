@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Alana Samara</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-query.css">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -39,8 +40,8 @@
       </div>
     </div>
 
-    <section class="sec-resumo">
-      <div id="resumo">
+    <section class="sec-resumo" id="resumo">
+      <div class="resumo">
 
         <div data-anime="left" class="resumo-titulo">
           <h1>Olá!! <br> Eu sou a <br> Alana.</h1>
@@ -48,17 +49,41 @@
 
         <div class="social" data-anime="left">
 
-          <div class="link-svg">
+          <div data-anime="left" class="resumo-titulo-query">
+            <h1>Olá!! <br> Eu sou a Alana.</h1>
+          </div>
+
+          <div class="texto-inicial-query">
+
+            <p data-anime="top">Estou cursando o oitavo período de engenharia mecatrônica, e tenho interesse em uma vaga de estágio nas áreas da Engenharia e Web desenvolvimento.</p>
+  
+          </div>
+
+          <div class="icons-resumo">
             <a href="https://www.linkedin.com/in/alana-samara-732297208/" target="_blank" rel="external" ><img src="img/linkedin.svg" alt="linkedin-icon"></a>
-
             <a href="https://www.instagram.com/alana237samara/?next=%2F" target="_blank" rel="external"><img src="img/instagram.svg" alt="instagram-icon"></a>
-
             <a href="https://github.com/AlanaSamara" target="_blank" rel="external"><img src="img/github.svg" alt="github-icon"></a>
           </div>
 
-          <img src="img/avatar.png" alt="Avatar ilustração">
+          <div class="icons-resumo-query">
+            <a href="https://www.linkedin.com/in/alana-samara-732297208/" target="_blank" rel="external" ><img src="img/linkedin-black-icon.svg" alt="linkedin-icon"></a>
+
+            <a href="https://www.instagram.com/alana237samara/?next=%2F" target="_blank" rel="external"><img src="img/instagram-black-icon.svg" alt="instagram-icon">
+            </a>
+            <a href="https://github.com/AlanaSamara" target="_blank" rel="external"><img src="img/github -black-icon.svg" alt="github-icon"></a>
+          </div>
+
+    
+
+          <img class="avatar" src="img/avatar.png" alt="Avatar ilustração">
           
         </div>
+
+        <div class="avatar-query">
+
+          <div><img src="img/avatar.png" alt="Avatar ilustração"></div>
+
+        </div> 
 
         <div class="texto-inicial">
 
@@ -75,15 +100,22 @@
 
       <div id="sobre">
 
-        <h2 data-anime="top">Sobre mim...</h2>
-      
-        <img data-anime="top" src="img/foto.png" alt="Foto">
-      
-        <p data-anime="top">Meu nome é Alana Samara, sou graduanda em engenharia mecatrônica na UNIT - Centro Universitário Tiradentes e apaixonada por tecnologia. Além da graduação estou focada em estudar tecnologias front-end e tenho desenvolvido alguns projetos nessa área. Atualmente sou acessora de marketing na Nordestek EJ.</p>
-      
-        <a data-anime="top" href="documents/AlanaSamaraCV.pdf" download="AlanaSamaraCV.pdf" type="application/pdf" target="_blank" rel="external">Download CV</a>
-      
+        <img class="foto-query" data-anime="top" src="img/foto.png" alt="Foto">
+
+        <div class="sobre">
+          
+          <h2 data-anime="top">Sobre mim...</h2>
+        
+          <img class="foto" data-anime="top" src="img/foto.png" alt="Foto">
+        
+          <p data-anime="top">Meu nome é Alana Samara, sou graduanda em engenharia mecatrônica na UNIT - Centro Universitário Tiradentes e apaixonada por tecnologia. Além da graduação estou focada em estudar tecnologias front-end e tenho desenvolvido alguns projetos nessa área. Atualmente sou acessora de marketing na Nordestek EJ.</p>
+        
+          <a data-anime="top" href="documents/AlanaSamaraCV.pdf" download="AlanaSamaraCV.pdf" type="application/pdf" target="_blank" rel="external">Download CV</a>
+        
+        </div>
+
       </div>
+
     </section>
 
     <section class="sec-qualificacoes">
@@ -674,7 +706,8 @@
                 <p> Site criado para compilar trabalhos e projetos desenvolvidos por mim, buscando demonstrar minhas habilidades, competências, qualificações e experiências.</p>
 
                 <div class="but-unico">
-                  <a href="https://github.com/AlanaSamara/AlanaSamara.github.io" target="_blank" rel="external" class="primeiro-but"> <img src="img/page-button.svg" alt="Web Page Icon"> Página do projeto</a>
+                  <a href="https://github.com/AlanaSamara/AlanaSamara.github.io" target="_blank" rel="external"  class="segundo-but"> <img src="img/github-button.svg" alt="Github Icon"> Repositório do projeto</a>
+
                 </div>
               
               </div>
