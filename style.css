@@ -984,7 +984,13 @@ footer{
   align-items: center;
   justify-content: space-around;
   padding: 10px 20px;
-  column-gap: 60px;
+  column-gap: 35px;
+}
+
+footer > span{
+  height: 40%;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.295);
 }
 
 .foo-text{
