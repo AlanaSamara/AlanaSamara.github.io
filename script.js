@@ -41,7 +41,7 @@ function scrollToIdOnClick(event2){
 
   nav.classList.toggle('active'); // Fechar o menu após um item ser clicado
 
-  const to = getScrollTopByHref(event2.target) - 56; 
+  const to = getScrollTopByHref(event2.target) - 72; 
   // 56 = a ditancia que a barra de menu terá do inicio da section
 
   scrollToPosition(to);
